@@ -7,7 +7,7 @@
 ![sample](./images/portfolio-sample.png)
 
 # 프로젝트 버전
-- [이전버전](https://github.com/cjswoduddn/appeal-api) 에서 마이크로 서비스로 전환 중
+- [이전버전](https://github.com/cjswoduddn/appeal-api){:target="_blank"} 에서 마이크로 서비스로 전환 중
 
 # 클라우드 아키텍처
 ![architecture](./images/architecture.png)
