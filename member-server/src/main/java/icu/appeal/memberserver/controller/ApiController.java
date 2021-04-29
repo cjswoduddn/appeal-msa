@@ -1,22 +1,34 @@
 package icu.appeal.memberserver.controller;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.cloud.context.config.annotation.RefreshScope;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import icu.appeal.commonlibrary.code.SuccessCode;
+import icu.appeal.commonlibrary.dto.member.SignInDto;
+import icu.appeal.commonlibrary.dto.response.SuccessResponse;
+import icu.appeal.memberserver.MemberServer;
+import icu.appeal.memberserver.service.MemberService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
-@RefreshScope
+@RequiredArgsConstructor
 @RequestMapping("/")
 @RestController
 public class ApiController {
 
-    @Value("${message}")
-    private String message;
+    private final MemberService memberService;
+
 
     @GetMapping
     public String test(){
-        return message;
+        return "hello";
     }
 
+    @PostMapping
+    public ResponseEntity<SuccessResponse<Long>> registerMember(@RequestBody SignInDto signInDto) {
+        return new ResponseEntity<>(
+                SuccessResponse.of(SuccessCode.CREATE_MEMBER,
+                        memberService.saveMember(signInDto)),
+                HttpStatus.CREATED
+        );
+    }
 }

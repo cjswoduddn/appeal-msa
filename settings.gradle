@@ -3,4 +3,5 @@ include 'config-server'
 include 'gateway-server'
 include 'discovery-server'
 include 'member-server'
+include 'common-library'
 
