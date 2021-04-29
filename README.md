@@ -1,5 +1,5 @@
 # APPEAL MSA PROJECT BACKEND API
-- SERVICE URL : <http://www.appeal.icu/>{:target="_blank"}
+- SERVICE URL : <http://www.appeal.icu/>
 - 테스트 이메일 : ma8511@naver.com
 - 테스트 비밀번호 : 123412
 - 서비스 소개 : 서비스 템플릿으로 개인 포트폴리오를 작성할 수 있습니다 ^^
@@ -7,7 +7,7 @@
 ![sample](./images/portfolio-sample.png)
 
 # 프로젝트 버전
-- [이전버전](https://github.com/cjswoduddn/appeal-api){:target="_blank"} 에서 마이크로 서비스로 전환 중
+- [이전버전](https://github.com/cjswoduddn/appeal-api) 에서 마이크로 서비스로 전환 중
 
 # 클라우드 아키텍처
 ![architecture](./images/architecture.png)
