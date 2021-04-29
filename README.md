@@ -1,5 +1,5 @@
 # APPEAL MSA PROJECT BACKEND API
-- SERVICE URL : http://www.appeal.icu/
+- SERVICE URL : <http://www.appeal.icu/>{:target="_blank"}
 - 테스트 이메일 : ma8511@naver.com
 - 테스트 비밀번호 : 123412
 - 서비스 소개 : 서비스 템플릿으로 개인 포트폴리오를 작성할 수 있습니다 ^^
