@@ -56,3 +56,8 @@ project(':member-server'){
 		compile project(':common-library')
 	}
 }
+project(':templatetwo-server'){
+	dependencies {
+		compile project(':common-library')
+	}
+}
